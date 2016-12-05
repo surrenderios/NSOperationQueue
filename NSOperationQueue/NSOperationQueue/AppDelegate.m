@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MacCacheFileOperation.h"
+#import "MacCacheConcurrenceOperation.h"
+
 #import "MacFileScannerManagerQueue.h"
 
 @interface AppDelegate ()
@@ -18,7 +20,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    //create operation
+    //create non-concurrence operation
     MacCacheFileOperation *operation = [[MacCacheFileOperation alloc]init];
     [operation startScanCacheFileWithStart:^{
         NSLog(@"start>>>>>>>>>>");
@@ -32,7 +34,13 @@
         NSLog(@"cancel>>>>>>>>>");
     }];
     
+    //create concurrence operation
+    MacCacheConcurrenceOperation *asynOperation = [[MacCacheConcurrenceOperation alloc]init];
+    
+    [operation addDependency:asynOperation];
+    
     MacFileScannerManagerQueue *scanner = [MacFileScannerManagerQueue shareFileScanner];
     [scanner addOperation:operation];
+    [scanner addOperation:asynOperation];
 }
 @end

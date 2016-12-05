@@ -29,7 +29,7 @@
 {
     if (self = [super init]) {
         _operationQueue = [[NSOperationQueue alloc]init];
-        _maxConcurrentOperation = 1;
+        _maxConcurrentOperation = 2;
     }
     return self;
 }

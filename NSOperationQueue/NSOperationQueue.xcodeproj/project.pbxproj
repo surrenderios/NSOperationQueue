@@ -14,6 +14,7 @@
 		FA6D15CA1D362E170019E3C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6D15C91D362E170019E3C3 /* Assets.xcassets */; };
 		FA6D15CD1D362E170019E3C3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6D15CB1D362E170019E3C3 /* MainMenu.xib */; };
 		FA6D15D61D362E950019E3C3 /* MacFileScannerManagerQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6D15D51D362E950019E3C3 /* MacFileScannerManagerQueue.m */; };
+		FA7ABABD1DF4F3EE0080C910 /* MacCacheConcurrenceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7ABABC1DF4F3EE0080C910 /* MacCacheConcurrenceOperation.m */; };
 		FABC4F181DF176D7009578A5 /* NSOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FABC4F171DF176D7009578A5 /* NSOperationQueueTests.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,8 @@
 		FA6D15CE1D362E170019E3C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6D15D41D362E950019E3C3 /* MacFileScannerManagerQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacFileScannerManagerQueue.h; sourceTree = "<group>"; };
 		FA6D15D51D362E950019E3C3 /* MacFileScannerManagerQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacFileScannerManagerQueue.m; sourceTree = "<group>"; };
+		FA7ABABB1DF4F3EE0080C910 /* MacCacheConcurrenceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacCacheConcurrenceOperation.h; sourceTree = "<group>"; };
+		FA7ABABC1DF4F3EE0080C910 /* MacCacheConcurrenceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacCacheConcurrenceOperation.m; sourceTree = "<group>"; };
 		FABC4F151DF176D7009578A5 /* NSOperationQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSOperationQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABC4F171DF176D7009578A5 /* NSOperationQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationQueueTests.m; sourceTree = "<group>"; };
 		FABC4F191DF176D7009578A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 				FA0F41E61D363CE300514FFB /* MacBaseOperation.m */,
 				FA0F41E11D3634E300514FFB /* MacCacheFileOperation.h */,
 				FA0F41E21D3634E300514FFB /* MacCacheFileOperation.m */,
+				FA7ABABB1DF4F3EE0080C910 /* MacCacheConcurrenceOperation.h */,
+				FA7ABABC1DF4F3EE0080C910 /* MacCacheConcurrenceOperation.m */,
 				FA6D15C91D362E170019E3C3 /* Assets.xcassets */,
 				FA6D15CB1D362E170019E3C3 /* MainMenu.xib */,
 				FA6D15CE1D362E170019E3C3 /* Info.plist */,
@@ -226,6 +231,7 @@
 			files = (
 				FA0F41E71D363CE300514FFB /* MacBaseOperation.m in Sources */,
 				FA0F41E31D3634E300514FFB /* MacCacheFileOperation.m in Sources */,
+				FA7ABABD1DF4F3EE0080C910 /* MacCacheConcurrenceOperation.m in Sources */,
 				FA6D15C81D362E170019E3C3 /* main.m in Sources */,
 				FA6D15C51D362E170019E3C3 /* AppDelegate.m in Sources */,
 				FA6D15D61D362E950019E3C3 /* MacFileScannerManagerQueue.m in Sources */,
@@ -429,6 +435,7 @@
 				FABC4F1D1DF176D7009578A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
